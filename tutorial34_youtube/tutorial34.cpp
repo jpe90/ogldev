@@ -239,7 +239,8 @@ private:
 #ifdef _WIN64
         m_pMesh1->SetRotation(90.0f, 0.0f, 0.0f);
 #else
-        m_pMesh1->SetRotation(270.0f, 180.0f, 0.0f);
+        //m_pMesh1->SetRotation(270.0f, 180.0f, 0.0f);
+        m_pMesh1->SetRotation(0.0f, 90.0f, 90.0f);
 #endif
         m_pTerrain = new BasicMesh();
         m_pTerrain->LoadMesh("../Content/box_terrain.obj");
